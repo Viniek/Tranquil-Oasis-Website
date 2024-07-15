@@ -1,0 +1,46 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model spaces {
+  space_id String @id @default(uuid())
+  type String @map("type")
+  vacancy Boolean @map("vacancy")
+  location String @map("location")
+  floor Int @map("floor")
+  price String @map("price")
+  Cart Cart[] // Relation field
+  @@map("spaces_table")
+}
+
+model user {
+  user_id String @id @default(uuid())
+  firstname String @map("firstname")
+  lastname String @map("lastname")
+  emailaddress String @map("emailaddress") @unique  
+  password String @map("password")
+  Cart Cart[] // Relation field
+  @@map("users_table")
+}
+
+model Cart {
+  id String @id @default(uuid())
+  userId String
+  user user @relation(fields: [userId], references: [user_id])
+  spaceId String
+  space spaces @relation(fields: [spaceId], references: [space_id])
+  createdAt DateTime @default(now())
+}
+
+

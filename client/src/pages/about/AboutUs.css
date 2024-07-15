@@ -1,0 +1,41 @@
+.about-us {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+  
+  .about-hero {
+    background-color: #ff8c00;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+  
+  .about-hero h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0 0;
+  }
+  
+  .about-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-content h2 {
+    color: #ff8c00;
+    margin-top: 2rem;
+  }
+  
+  .about-content p {
+    margin-bottom: 1.5rem;
+    color: #666;
+  }
+  

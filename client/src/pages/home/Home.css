@@ -1,0 +1,107 @@
+/* General styling for the home page */
+.home {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 0 2rem;
+}
+
+/* Hero section styling */
+.hero {
+  background: linear-gradient(135deg, #ff8c00, #ff6347); /* Gradient from Orange to Tomato */
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  height: 80vh; /* 80% of the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the text horizontally */
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.typing-effect {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.typing-effect span {
+  font-weight: bold;
+}
+
+.cursor {
+  font-weight: bold;
+  color: #ff4500; /* Darker orange */
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 1rem 0 0;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 90%; /* Increase the image size to 90% */
+  height: auto;
+  box-shadow: none; /* Remove any shadow to blend the image */
+  background: transparent; /* Ensure the image background is transparent */
+}
+
+/* Featured section styling */
+.featured {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.featured h2 {
+  color: #ff8c00; /* Orange */
+  margin-bottom: 1rem;
+}
+
+.featured p {
+  color: #666;
+}
+
+/* Intro section styling */
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.intro h2 {
+  color: #ff8c00; /* Orange */
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}

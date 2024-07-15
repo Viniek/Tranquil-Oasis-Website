@@ -1,0 +1,97 @@
+/* General styling for the footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer img {
+    max-width: 100%;
+  }
+  
+  .fleft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .links img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+  }
+  
+  .openinghrs {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+  }
+  
+  .openinghrs h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff8c00;
+  }
+  
+  .openinghrs p {
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  .openinghrs h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .fspaces {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .fspaces h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff8c00;
+  }
+  
+  .fspaces p {
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .fleft, .openinghrs, .fspaces {
+      margin-bottom: 20px;
+    }
+  
+    .fleft, .openinghrs, .fspaces {
+      max-width: 100%;
+    }
+  
+    .links {
+      justify-content: center;
+    }
+  
+    .links img {
+      margin: 0 10px;
+    }
+  }
+  

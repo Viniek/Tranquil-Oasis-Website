@@ -1,0 +1,65 @@
+/* General styling for the apartments page */
+.apartments {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .apartment-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .apartment-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    width: 250px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .apartment-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .apartment-card h2 {
+    font-size: 1.5rem;
+    color: #ff8c00;
+    margin-bottom: 0.5rem;
+  }
+  
+  .apartment-card p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .apartment-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e07b00;
+  }
+  
